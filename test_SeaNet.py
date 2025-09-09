@@ -29,9 +29,11 @@ for dataset in test_datasets:
     save_path = './models/SeaNet/' + dataset + '/'
     if not os.path.exists(save_path):
         os.makedirs(save_path)
-    image_root = dataset_path + dataset + '/image/'
+    # image_root = dataset_path + dataset + '/image/'
+    image_root = '/kaggle/input/eorssd/test-images'
     print(dataset)
-    gt_root = dataset_path + dataset + '/GT/'
+    # gt_root = dataset_path + dataset + '/GT/'
+    gt_root = '/kaggle/input/eorssd/test-labels'
     test_loader = test_dataset(image_root, gt_root, opt.testsize)
     time_sum = 0
     for i in range(test_loader.size):
