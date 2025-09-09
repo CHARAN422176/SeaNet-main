@@ -18,7 +18,7 @@ opt = parser.parse_args()
 dataset_path = '/kaggle/input/eorssd/test-images'
 
 model = SeaNet()
-model.load_state_dict(torch.load('./models/SeaNet/SeaNet.pth.50'))
+model.load_state_dict(torch.load('/kaggle/working/SeaNet-main/models/SeaNet_EORSSD.pth.50'))
 
 model.cuda()
 model.eval()
