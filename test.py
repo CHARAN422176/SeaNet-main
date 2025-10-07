@@ -70,8 +70,8 @@ opt = parser.parse_args()
 
 # dataset paths
 dataset_path = '/kaggle/input/eorssd'
-image_root = os.path.join(dataset_path, 'test-images/')
-gt_root = os.path.join(dataset_path, 'test-labels/')
+image_root = '/kaggle/input/eorssd/test-images/'
+gt_root = '/kaggle/input/eorssd/test-labels/'
 
 # model
 model = SeaNet()
